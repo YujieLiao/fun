@@ -1,0 +1,36 @@
+x<-1:10
+install.packages(c("car", "ggplot2"))
+library(car)
+plot(mtcars$disp, mtcars$mpg)
+abline(lm(mpg ~ disp, data = mtcars))
+car::scatterplot(mpg ~ disp, 
+                 data = mtcars)
+library(ggplot2)
+ggplot(data = mtcars, 
+       mapping = aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "lm") + theme_minimal()
+install.packages('plotly')
+plotly::ggplotly(my_plot)
+
+install.packages(c("readr", "data.table"))
+yes
+install.packages(c("readr", "data.table"))
+install.packages("readxl")
+plot(mtcars$disp, mtcars$mpg)
+abline(lm(mpg ~ disp, data = mtcars))
+
+st_joe_land <- read.delim(file = "stJoeLand.csv", sep = ",")
+
+st_joe_land <- read.csv(file = "stJoeLand.csv")
+
+x<-1:10
+y<-1:3
+
+
+
+
+
+
+
+
